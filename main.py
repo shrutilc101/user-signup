@@ -35,7 +35,7 @@ def email_period(x):
         return False
 
 
-@app.route("/signup", methods=["post"])
+@app.route("/signup", methods=["POST"])
 def user_signup():
 
 # Create variable from the form input
@@ -100,7 +100,5 @@ def valid_signup():
     username=request.args.get('username')
     return render_template("welcome.html", username=username)
 
-
-app.run()
 
 app.run()
